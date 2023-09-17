@@ -192,4 +192,4 @@ def steady_bem(
     return P_out, Thrust, C_P, C_T
     # return P_out, Thrust, C_P, C_T, C_P_local_arr, C_T_local_arr    # Only for comparing C_P_local diagrams etc. 
 
-    # test Github
+    # test Github 2
