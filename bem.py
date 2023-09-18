@@ -16,7 +16,7 @@ def steady_bem_for_each_airfoil(
     omega: float,
     theta_p: float,
     lamda: float,
-    airfoil: dict|pd.Series,
+    airfoil: dict,
     model: int = 'Glauret',
     error: float = 1e-6,
     ) -> (float, float, float, float):
