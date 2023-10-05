@@ -184,8 +184,10 @@ def steady_bem(
             Thrust:         Thrust [kN]
             C_P:            Total power coefficient [-]
             C_T:            Total thrust coefficient [-]
-            C_P_local_arr:  Array with local C_P for each blade element
-            C_T_local_arr:  Array with local C_T for each blade element
+            C_P_local_arr:  Array with local C_P for each blade element [-]
+            C_T_local_arr:  Array with local C_T for each blade element [-]
+            p_n_arr:        Array with p_n for each blade element [N/m]
+            p_t_arr:        Array with p_t for each blade element [N/m]
     """
     # Initialize arrays
     p_n_arr = np.zeros_like(df_blade['r'])
@@ -224,6 +226,8 @@ def steady_bem(
         'C_T': C_T,
         'C_P_local_arr': C_P_local_arr,
         'C_T_local_arr': C_T_local_arr,
+        'p_n_arr': p_n_arr,
+        'p_t_arr': p_t_arr
     }
 
 
